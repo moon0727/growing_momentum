@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+body {
+    overflow: hidden;
+    font-family: "Nanum Myeongjo", serif;
+    /* font-family: "Nunito", sans-serif; */
+}
+
+.first-view { 
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden {
+    display : none;
+}
+
+#login-text {
+    text-align : center;
+    margin: 0px;
+    margin-bottom: 10px;
+    color : white;
+    font-size : 55px;
+}
+
+#login-form input {
+    background: none;
+    border : none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    outline : none;
+    font-size : 50px;
+    color : white;
+    width : 100%;
+}
+
+#weather {
+    text-align: right;
+    color : white;
+    margin: 30px;
+}
+
+#clock {
+    text-align: center;
+    color : white;
+    font-size : 80px;
+    margin: 80px 30px 0px 30px;
+}
+
+#greeting {
+    text-align: center;
+    color : white;
+    font-size : 50px;
+    margin : 0px 30px;
+}
+
+#todo-form {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-text {
+    text-align : center;
+    color : white;
+    font-size : 50px;
+}
+#todo-form input {
+    background: none;
+    border : none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    outline : none;
+    font-size : 50px;
+    color : white;
+}
+
+#quote {
+    color : white;
+    position : fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#todo-list li{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    font-size : 30px;
+    color : white;
+    width: 600px;
+    list-style-type: none;
+}
+
+button {
+    margin : 0 10px;
+    color : white;
+    border: 2px solid white;
+    background-color : rgb(0, 0, 0, 0);
+    border-radius : 2px;
+}
+
+button:hover {
+    background-color : white;
+    transition: 0.5s;
+    color : black;
+}
+
+button:hover ~ span {
+    color : red;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+}

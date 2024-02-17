@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Momentum</title>
+</head>
+<body class="first-view">
+    <form class="hidden" id="login-form">
+        <h1 class="hidden" id="login-text">Hello, what's your name?</h1>
+        <input class="hidden" required maxlength="15" type="text"/>
+    </form>
+
+    <div class="hidden" id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <h2 class="hidden" id="clock">00:00:00</h2>
+
+    <h1 class="hidden" id="greeting"></h1>
+
+    <form class="hidden" id="todo-form">
+        <h1 class="hidden" id="todo-text">What are you going to do today?</h1>
+        <input class="hidden" required type="text"/>
+    </form>
+    <ul class="hidden" id="todo-list"></ul>
+
+    <div class="hidden" id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/greetings.js"></script>
+</body>
+</html>
