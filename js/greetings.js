@@ -10,7 +10,6 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 const FIRST_VIEW = "first-view"
 
-//username submit event : preventDefault, loginform hidden, save username, show hello username
 function onLoginSubmit(event) {
     event.preventDefault();
 
@@ -28,7 +27,6 @@ function onLoginSubmit(event) {
     paintGreetings(username);
 }
 
-//hello username : show hello username, remove hidden
 function paintGreetings(username) {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
@@ -44,7 +42,6 @@ function paintGreetings(username) {
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
-//check exist username in localStorage
 if(savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginText.classList.remove(HIDDEN_CLASSNAME);
